@@ -54,7 +54,7 @@ object GoogleCloudEngine extends Plugin {
 
   val logger = new sbt.ProcessLogger {
     def info(info: => String) = println(info)
-    def error(err: => String) = { println("Error: " + err) }
+    def error(err: => String) = { println(err) }
     def buffer[T](f: => T) = f
   }
 
